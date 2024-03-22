@@ -10,18 +10,32 @@
 
 <body>
   <header>
-    <nav>
-      <div id="my_menu" align="right">
-        <a href="index.html">HOME</a> |
-        <a href="contato.html">CONTATO</a> |
-        <a href="sobre.html">SOBRE</a> |
-        <a href="eventos.html">EVENTOS</a> |
-        <a href="entrar.html">ENTRAR</a>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <li class="navbar-item"><a href="./index.html" class="navbar-link">Home</a></li>
+        <li class="navbar-item"><a href="./eventos.html" class="navbar-link">Eventos</a></li>
+        <li class="navbar-item"><a href="./contato.html" class="navbar-link">Contato</a></li>
+        <div class="dropdown">
+            <li class="navbar-item"><a href="#" class="navbar-link">Cursos</a></li>
+          <div class="dropdown-content">
+            <a href="./ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="#">Engenharia de Produção</a>
+            <a href="#">Gestão em Tecnologia da Informação</a>
+            <a href="#">Letras</a>
+            <a href="#">Gestão Pública</a>
+          </div>
+        </div>
+        <li class="navbar-item"><a href="./entrar.html" class="navbar-link">Entrar</a></li>
       </div>
+      <div class="navbar-right">
+        <li class="navbar-item"><a href="./sobre.html" class="navbar-link">Sobre</a></li>
+      </div> 
     </nav>
-    <figure>
-      <img src="./Imagens/Logo.jpg" alt="Logo do IFSP">
-    </figure>
+    <section class="intro">
+      <figure class="logo">
+        <img src="./Imagens/Logo.jpg" alt="Logo do IFSP">
+      </figure>
+    </section>
   </header>
 
   <h1>Inscreva-se</h1>

@@ -4,62 +4,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Semana 6</title>
-  <link href="favicon.ico" rel="icon" type="image/x-icon">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./Imagensmgs/favicon.ico" type="image/x-icon">
+  <title>Desenvolvimento Web: Cliente (PTBDWBC) - Semana 06</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
-  <nav>
-    <div id="my_menu" align="right">
-      <a href="index.html">HOME</a> |
-      <a href="contato.html">CONTATO</a> |
-      <a href="sobre.html">SOBRE</a> |
-      <a href="eventos.html">EVENTOS</a> |
-      <a href="entrar.html">ENTRAR</a>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <li class="navbar-item"><a href="./index.html" class="navbar-link">Home</a></li>
+        <li class="navbar-item"><a href="./eventos.html" class="navbar-link">Eventos</a></li>
+        <li class="navbar-item"><a href="./contato.html" class="navbar-link">Contato</a></li>
+        <div class="dropdown">
+            <li class="navbar-item"><a href="#" class="navbar-link">Cursos</a></li>
+          <div class="dropdown-content">
+            <a href="./ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="#">Engenharia de Produção</a>
+            <a href="#">Gestão em Tecnologia da Informação</a>
+            <a href="#">Letras</a>
+            <a href="#">Gestão Pública</a>
+          </div>
+        </div>
+        <li class="navbar-item"><a href="./entrar.html" class="navbar-link">Entrar</a></li>
+      </div>
+      <div class="navbar-right">
+        <li class="navbar-item"><a href="./sobre.html" class="navbar-link">Sobre</a></li>
+      </div> 
+    </nav>
+    <section class="intro">
+      <figure class="logo">
+        <img src="./Imagens/Logo.jpg" alt="Logo do IFSP">
+      </figure>
+    </section>
+  </header>
+  <section class="eventos">
+    <h1>Acontece no IFSP!</h1>
+    <figure>
+      <img src="./Imagens/SEJA_RARO.jpg" alt="Banner Palestra Seja Raro" class="banner-img">
+      Aniversário do IFSP - Pirituba - Palestra Augusto Aielo
+    </figure>
+  </section>
+  <section class="inov">
+    <h1>Conheça os desafios de inovação</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po?si=qrplXbUvVbLGB_-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div>
+      <a href="#">
+        <img src="./Imagens/MoveTop.png" alt="Botão para subir" class="img-link">
+      </a>
+      <a href="https://www.facebook.com/ifsppirituba" target="_blank">
+        <img src="./Imagens/facebook.png" alt="Página do Facebook do IFSP Pirituba" class="img-link">
+      </a>
     </div>
-  </nav>
-
-  <img src="Imagens/Logo.jpg" alt="Logo IFSP"/>
-
-  <p><strong>Cursos</strong></p>
-
-  <ul>
-    <li><a href="ads.html">Análise e Desenvolvimento de Sistemas</a></li>
-    <li><a href="#">Engenharia de Produção</a></li>
-    <li><a href="#">Gestão em Tecnologia da Informação</a></li>
-    <li><a href="#">Letras</a></li>
-    <li><a href="#">Gestão Pública</a></li>
-  </ul>
-
-  <p><strong>Eventos</strong></p>
-
-  <div class="evento">
-    <img src="Imagens/SEJA_RARO.jpg" alt="Banner evento" width="380"/>
-    <p>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
-  </div>
-
-  <h2>Sobre a Biblioteca</h2>
-  <img src="Imagens/library.jpeg" alt="Ícone biblioteca" width="100"/>
-  <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
-  <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
-
-  <h2>Conheça o SUAP</h2>
-  <iframe width="600" height="500" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" allowfullscreen></iframe>
-
-  <br>
-  <a href="#top">
-    <img src="Imagens/MoveTop.png" alt="início" width="40"/>
-  </a>
-
-  <a href="https://www.facebook.com/ifsppirituba">
-    <img src="Imagens/facebook.png" alt="Ícone Facebook" width="40"/>
-  </a>
-
-  <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
-
-  <script src="script.js"></script>
+  </section>
+  <footer>
+    <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+  </footer>
 </body>
 
 </html>
